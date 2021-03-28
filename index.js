@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { userInfo } = require('os');
+const { SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION } = require('constants');
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -38,7 +40,20 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+    try {
+        const userAnswers = await inquirer.prompt(questions);
+        console.log("Your responses:", userAnswers);
+        console.log("Thank you! Fetching your GitHub data...");
+        console.log("Generating your README...");
+        const markdown = generateMarkdown(userAnswers);
+        console.log(markdown);
+        await fs.writeFileSync('yourNewREADME.md', markdown);
+
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 // Function call to initialize app
 init();
