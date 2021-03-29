@@ -22,7 +22,7 @@ let MarkdownSec =
 
 ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userAnswers.username}/${userAnswers.repo}?style=flat&logo=appveyor) 
 ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userAnswers.username}/${userAnswers.repo}?style=flat&logo=appveyor)
-![Badge for GitHub license]()
+![Badge for GitHub license](https://img.shields.io/github/license/${userAnswers.username}/${userAnswers.repo}?style=flat&logo=appveyor)
 
 ## Description 
 
