@@ -78,6 +78,11 @@ const questions = [
     ],
     name: "license",
   },
+  {
+      type: "input",
+      message: "provide your email address or other contact information.",
+      name: "contact",
+  }
 ];
 
 // TODO: Create a function to write README file
@@ -94,22 +99,23 @@ function writeToFile(fileName, data) {
 async function init() {
   try {
     const userAnswers = await inquirer.prompt(questions);
-    console.log("Your answers:", userAnswers);
+    console.log("Your answers: ", userAnswers);
     console.log("Thank you! Fetching your GitHub data...");
-
-    //Generating
-    console.log("Generating your README...");
-    const markdown = generateMarkdown(userAnswers);
-    console.log(markdown);
-    await writeFileAsync("yourNewREADME.md", markdown);
 
     //Giit
     const userInfo = await Giit.getUser(userAnswers);
     console.log("Your GitHub info:", userInfo);
+
+    //Generating
+    console.log("Generating your README...");
+    const markdown = generateMarkdown(userAnswers, userInfo);
+    console.log(markdown);
+   
+    await writeFileAsync("yourNewREADME.md", markdown);
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 // Function call to initialize app
 init();
