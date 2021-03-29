@@ -1,19 +1,50 @@
-# Professional README Generator Starter Code
+# ReadmeGen-1
 
-[How to create a Professional README](./readme-guide.md)
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/sstevens22/ReadmeGen-1?style=flat&logo=appveyor) 
+![Badge for GitHub last commit](https://img.shields.io/github/last-commit/sstevens22/ReadmeGen-1?style=flat&logo=appveyor)
+![Badge for GitHub license](https://img.shields.io/github/license/sstevens22/ReadmeGen-1?style=flat&logo=appveyor)
 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
+## Description  
+
+Demo: https://drive.google.com/file/d/17HURinliWXiSmKLxHXzvjA9J8ILptalY/view
+
+## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+* [License](#license)
+
+## Installation
+
+*Steps required to install project:*
+
+ You must have a terminal, npm packets installed by using the command -- npm i --, having node installed and have an active git repo.
+
+## Usage 
+
+*Instructions and examples for use:*
+
+You need to type in the details as answers to the questions when prompted.
+
+## Tests
+
+*Tests for application and how to run them:*
+
+This Readme is a test!
+
+## License
+
+GNU AGPLv3
+
+
+## Questions?
+
+![Developer Profile Picture](https://avatars.githubusercontent.com/u/77650590?v=4) 
+
+If you have any questions you can chat me up with the information below:
+
+GitHub: [@sstevens22](https://api.github.com/users/sstevens22)
+
+
+Contact info: smgstevensbusiness@gmail.com
