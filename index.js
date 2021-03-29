@@ -43,7 +43,7 @@ const questions = [
   {
     type: "input",
     message:
-      "If any, what are the instalation steps required to run your project?",
+      "If any, what are the installation steps required to run your project?",
     name: "installation",
   },
   {

@@ -24,9 +24,7 @@ let MarkdownSec =
 ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userAnswers.username}/${userAnswers.repo}?style=flat&logo=appveyor)
 ![Badge for GitHub license](https://img.shields.io/github/license/${userAnswers.username}/${userAnswers.repo}?style=flat&logo=appveyor)
 
-## Description 
-
-*The what, why, and how:* 
+## Description  
 
 ${userAnswers.description}
 
@@ -48,7 +46,7 @@ if (userAnswers.installation !== '') {
 
 ## Installation
 
-*Steps required to install project and how to get the development environment running:*
+*Steps required to install project:*
 
 ${userAnswers.installation}`
 };
@@ -75,7 +73,7 @@ if (userAnswers.contributing !== '') {
 
 ## Contributing
 
-*If you would like to contribute it, you can follow these guidelines for how to do so.*
+*If you would like to contribute, follow these instructions.*
 
 ${userAnswers.contributing}`
 };
