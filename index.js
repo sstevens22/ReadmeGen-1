@@ -2,6 +2,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
+const util = require('util');
+const writeFileAsync = util.promisify(writeToFile);
+const Giit =require('./Giit.js')
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -47,7 +50,9 @@ async function init() {
         console.log("Generating your README...");
         const markdown = generateMarkdown(userAnswers);
         console.log(markdown);
-        await fs.writeFileSync('yourNewREADME.md', markdown);
+        await writeFileAsync('yourNewREADME.md', markdown);
+        const userInfo = await Giit.getUser(userAnswers);
+        console.log("Your GitHub info:", userInfo);
 
     } catch (error) {
         console.log(error);
